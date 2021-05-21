@@ -6,6 +6,9 @@ class Viewer {
 			std::cout << "歡迎來到吧合母待,請輸入帳號,或是輸入guest用遊客模式進入,輸入new創建新帳號,輸入r退出:";
 		}
 		void printchooseBoard() {
-			std::cout << "輸入編號進入指定看板,輸入r退回:";
+			std::cout << "輸入編號進入指定看板,輸入r返回:";
+		}
+		void printviewBoard() {
+			std::cout << "輸入編號進入指定貼文,輸入r返回:";
 		}
 };
