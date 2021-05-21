@@ -1,3 +1,7 @@
 使用.txt格式存檔
 每個user所使用的檔名皆為數字
 numberofuser.txt紀錄用戶總數,如果有做user檔案的刪除動作,得將此檔案的數目重置為0
+想讓user變管理員就把該用戶的.txt檔的最後一行改成1
+每個看板所使用的檔名皆為"Board"+數字
+同user,numberofboard.txt紀錄看板總數,create看板時自動新增
+刪除看板只是把該看板隱藏,並不是真正刪除
