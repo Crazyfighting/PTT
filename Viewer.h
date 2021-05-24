@@ -11,4 +11,7 @@ class Viewer {
 		void printviewBoard() {
 			std::cout << "輸入編號進入指定貼文,輸入r返回:";
 		}
+		void printPost() {
+			std::cout << "輸入r返回:";
+		}
 };
