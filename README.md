@@ -8,3 +8,5 @@ numberofuser.txt紀錄用戶總數,如果有做user檔案的刪除動作,得將�
 每個看板所使用的檔名皆為"Board"+數字
 同user,numberofboard.txt紀錄看板總數,create看板時自動新增
 刪除看板只是把該看板隱藏,並不是真正刪除
+ 
+各種文字檔請放在與專案同名的資料夾就好
