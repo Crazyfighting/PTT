@@ -151,6 +151,7 @@ class BoardManager {
                     f << input.nickname <<endl;
                     input.Permission_level = USER;
                     f << input.Permission_level <<endl;
+                    f << 0;
                     f.close();
                     users.push_back(input);
                     ofstream plusnumber("numberofuser.txt");
