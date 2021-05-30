@@ -392,8 +392,10 @@ class BoardManager {
                 cout << "(" << i << ")" << boards[currentboard].posts[i].title << endl << endl;
             }
             if (currentuser >= 0) {
-                 
-                    cout << "輸入create建立貼文,輸入delete刪除貼文,";
+                if (users[currentuser].Permission_level == ADMINSTRATOR) {
+                    cout << "輸入delete刪除貼文,";
+                    }
+                    cout << "輸入create建立貼文,";
                     viewer.printviewBoard();
                     string input;
 
@@ -408,6 +410,11 @@ class BoardManager {
                             return;
                         }
                         else if (input == "delete") {
+                            if (users[currentuser].Permission_level != ADMINSTRATOR) {
+                                cout << "輸入非法!" << endl;
+                                system("pause");
+                                return;
+                            }
                             deletepost();
                             return;
                         }
