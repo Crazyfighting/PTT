@@ -14,4 +14,11 @@ class Viewer {
 		void printPost() {
 			std::cout << "輸入r返回:";
 		}
+		void printMailBoard() {
+			std::cout << "輸入編號進入指定郵件,輸入write撰寫郵件,輸入delete刪除郵件,輸入r返回:";
+		}
+
+		void printMail() {
+			std::cout << "輸入reply回覆郵件,標題為(RE:回覆郵件的標題),輸入r返回:";
+		}
 };
