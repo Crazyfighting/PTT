@@ -801,7 +801,7 @@ class BoardManager {
             }
             int i;
             for (i = 0;i < users.size();i++) {
-                if (users[i].accountname == boards[currentboard].posts[boards[currentboard].currentpost].creator) {
+                if (users[i].accountname == boards[currentboard].posts[boards[currentboard].currentpost].com[stoi(act) - 1].accountname) {
                     break;
                 }
             }
@@ -1076,7 +1076,7 @@ class BoardManager {
             else if (act == "reply") {
                 int i;
                 for ( i = 0;i < users.size();i++) {
-                    if (users[i].accountname == users[currentuser].maillist[users[currentuser].currentmail].sender,REPLY) {
+                    if (users[i].accountname == users[currentuser].maillist[users[currentuser].currentmail].sender) {
                         break;
                     }
                 }
